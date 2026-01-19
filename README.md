@@ -100,4 +100,4 @@ While building this project, I improved my understanding of:
 ## Author
 
 Kishan
-This project was created for learning and personal practice.
+* This project was created for learning and personal practice.
