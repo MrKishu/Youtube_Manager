@@ -99,10 +99,5 @@ While building this project, I improved my understanding of:
 
 ## Author
 
-Kishu
-
----
-
-## License
-
+Kishan
 This project was created for learning and personal practice.
