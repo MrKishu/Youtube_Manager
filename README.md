@@ -47,7 +47,7 @@ This project focuses on applying core Python concepts along with database integr
 
 ## Database Schema
 
-##The application uses a simple table structure:
+The application uses a simple table structure:
 
 ```python
 def add_video(name, duration):
@@ -56,5 +56,5 @@ def add_video(name, duration):
         (name, duration)
     )
     conn.commit()
-```python
+
 
