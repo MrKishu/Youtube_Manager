@@ -41,7 +41,7 @@ This project focuses on applying core Python concepts along with database integr
 4. Run the application:
    ```bash
    python Youtube_Manager.py
-##Database Schema
+## Database Schema
 
 ##The application uses a simple table structure:
 ```python
@@ -50,5 +50,10 @@ def add_video(name, duration):
         "INSERT INTO videos (name, duration) VALUES (?, ?)",
         (name, duration)
     )
-    conn.commit()
+    conn.commit()```python
+---
+
+## Author
+Kishan
+This project was built for learning and hands-on practice with Python and SQL integration.
 
