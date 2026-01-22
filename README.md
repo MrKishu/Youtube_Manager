@@ -48,6 +48,7 @@ This project focuses on applying core Python concepts along with database integr
 ## Database Schema
 
 ##The application uses a simple table structure:
+
 ```python
 def add_video(name, duration):
     cursor.execute(
@@ -56,11 +57,4 @@ def add_video(name, duration):
     )
     conn.commit()
 ```python
-
-
----
-
-## Author
-Kishan
-This project was built for learning and hands-on practice with Python and SQL integration.
 
