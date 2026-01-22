@@ -1,101 +1,109 @@
 # YouTube Video Manager (Python CLI Application)
 
-## About the Project
+YouTube Video Manager (Python CLI Application)
+About the Project
 
-This project is a simple command-line application built using Python that helps manage a list of YouTube videos.
-It allows users to add, view, search, update, and delete video entries, with all data saved permanently using a JSON file.
+YouTube Video Manager is a command-line application built using Python that allows users to manage a collection of YouTube videos. The application supports adding, viewing, searching, updating, and deleting video records, with all data stored persistently in a relational database using SQL.
 
-The goal of this project was to practice core Python concepts by building something practical instead of just writing isolated examples.
+The project focuses on applying core Python concepts alongside database integration to build a practical, real-world CLI tool rather than isolated code examples.
 
----
+Features
 
-## What This App Can Do
+Add YouTube videos with a title and duration
 
-* Add YouTube videos with a name and duration
-* Display all saved videos in a clean, numbered list
-* Search videos using partial names (case-insensitive)
-* Update video details such as name or length
-* Delete videos with confirmation to avoid mistakes
-* Store data persistently using a JSON file
-* Handle invalid inputs without crashing
+Display all stored videos in a clean, numbered list
 
----
+Search videos using partial, case-insensitive matching
 
-## Tech Stack
+Update existing video details such as name or duration
 
-* Python 3
-* JSON for data storage
-* Command Line Interface (CLI)
+Delete videos with confirmation to prevent accidental removal
 
----
+Persistent data storage using an SQL database
 
-## File Structure
+Input validation to handle invalid or unexpected user input gracefully
 
-```
+Tech Stack
+
+Python 3
+
+SQL (SQLite / MySQL, depending on configuration)
+
+Python DB API (sqlite3 or equivalent)
+
+Command Line Interface (CLI)
+
+File Structure
 Youtube_Manager.py
-youtube.txt
+database.db
 README.md
-```
 
-* `Youtube_Manager.py` contains the full application logic
-* `youtube.txt` stores video data in JSON format
-* `README.md` explains the project
 
----
+Youtube_Manager.py – Contains the full application logic and database operations
 
-## How to Run
+database.db – SQL database file storing video records
 
-1. Make sure Python 3 is installed on your system
-2. Clone or download this repository
-3. Open a terminal in the project directory
-4. Run the program using:
+README.md – Project documentation
 
-   ```
-   python Youtube_Manager.py
-   ```
+How to Run
 
----
+Ensure Python 3 is installed on your system
 
-## Data Storage Format
+Clone or download this repository
 
-Videos are stored as a list of dictionaries in a JSON file:
+Open a terminal in the project directory
 
-```json
-[
-    {
-        "Name": "Python Tutorial",
-        "Length": "10:30"
-    },
-    {
-        "Name": "Data Structures Basics",
-        "Length": "15:45"
-    }
-]
-```
+Run the application:
 
----
+python Youtube_Manager.py
 
-## What I Learned
 
-While building this project, I improved my understanding of:
+The database will be created automatically if it does not already exist.
 
-* Python functions and modular code structure
-* Lists and dictionaries for managing structured data
-* File handling and JSON serialization
-* User input validation and error handling
-* Designing a menu-driven CLI application
+Database Schema
 
----
+The application uses a simple table to store video records:
 
-## Possible Improvements
+CREATE TABLE videos (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    duration TEXT NOT NULL
+);
 
-* Sort videos by name or duration
-* Show basic statistics like total videos and average length
-* Mark videos as favorites
-* Export video data to CSV
-* Use unique IDs instead of list index
 
----
+Each video is stored as a row in the database, ensuring structured and reliable data management.
+
+What I Learned
+
+Through this project, I strengthened my understanding of:
+
+Python functions and modular program design
+
+SQL fundamentals and database schema design
+
+Performing CRUD operations using SQL from Python
+
+Input validation and error handling in CLI applications
+
+Designing a menu-driven program with persistent storage
+
+Possible Improvements
+
+Add sorting by video name or duration
+
+Display statistics such as total video count and average duration
+
+Introduce a favorites flag for videos
+
+Export video data to CSV
+
+Extend support to multiple users
+
+Author
+
+Kishan
+
+This project was built for learning and hands-on practice with Python and SQL integration.
 
 ## Author
 
