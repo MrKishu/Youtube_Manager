@@ -44,8 +44,11 @@ This project focuses on applying core Python concepts along with database integr
 ##Database Schema
 
 ##The application uses a simple table structure:
-##CREATE TABLE videos (
-  ##  id INTEGER PRIMARY KEY AUTOINCREMENT,
-   ## name TEXT NOT NULL,
-  ##  duration TEXT NOT NULL
-);
+```python
+def add_video(name, duration):
+    cursor.execute(
+        "INSERT INTO videos (name, duration) VALUES (?, ?)",
+        (name, duration)
+    )
+    conn.commit()
+
