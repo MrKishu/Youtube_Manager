@@ -45,7 +45,7 @@ This project focuses on applying core Python concepts along with database integr
 ---
 
 
-## Database Schema
+## Database Schema  
 
 The application uses a simple table structure:
 
