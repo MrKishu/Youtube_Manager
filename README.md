@@ -8,19 +8,19 @@ This project focuses on applying core Python concepts along with database integr
 ---
 
 ## Features
-- Add YouTube videos with title and duration  
-- View all stored videos in a clean, numbered list  
-- Search videos using partial, case-insensitive matching  
-- Update existing video details  
-- Delete videos with confirmation to prevent accidental removal  
-- Persistent storage using an SQLite database  
-- Graceful handling of invalid user inputs  
+- Add YouTube videos with title and duration. 
+- View all stored videos in a clean, numbered list.  
+- Search videos using partial, case-insensitive matching.  
+- Update existing video details.  
+- Delete videos with confirmation to prevent accidental removal.  
+- Persistent storage using an SQLite database.  
+- Graceful handling of invalid user inputs.  
 
 ---
 
 ## Tech Stack
 - Python 3  
-- SQL (SQLite)  
+- SQL (Database)  
 - Python DB API (`sqlite3`)  
 - Command Line Interface (CLI)  
 
