@@ -20,7 +20,7 @@ This project focuses on applying core Python concepts along with database integr
 
 ## Tech Stack
 - Python 3  
-- SQL (SQLite / MySQL)  
+- SQL (SQLite)  
 - Python DB API (`sqlite3`)  
 - Command Line Interface (CLI)  
 
