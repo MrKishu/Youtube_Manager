@@ -3,7 +3,7 @@
 ## About the Project
 YouTube Video Manager is a command-line application built using Python that allows users to manage a collection of YouTube videos. The application supports adding, viewing, searching, updating, and deleting video records, with all data stored persistently in a relational database using SQLite.
 
-This project focuses on applying core Python concepts along with database integration to build a practical, real-world CLI tool rather than isolated examples.
+This project focuses on applying core Python concepts along with database integration.
 
 ---
 
