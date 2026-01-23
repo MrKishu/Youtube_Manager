@@ -13,7 +13,7 @@ This project focuses on applying core Python concepts along with database integr
 - Search videos using partial, case-insensitive matching  
 - Update existing video details  
 - Delete videos with confirmation to prevent accidental removal  
-- Persistent storage using an SQL database  
+- Persistent storage using an SQLite database  
 - Graceful handling of invalid user inputs  
 
 ---
