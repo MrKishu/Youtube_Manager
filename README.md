@@ -57,4 +57,13 @@ def add_video(name, duration):
     )
     conn.commit()
 
+___
 
+
+## What I Learned
+
+- Building CRUD operations using SQLite and Python’s DB API.
+- Designing and interacting with a relational database.
+- Handling user input safely to prevent invalid data and crashes.
+- Structuring a clean and functional CLI workflow.
+- Organizing a small project with separate logic and database layers.
